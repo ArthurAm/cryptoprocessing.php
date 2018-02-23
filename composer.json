@@ -1,0 +1,21 @@
+{
+    "name": "oomag/cryptoprocessing.php",
+    "description": "Package to access and interact with Cryptoprocessing API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artur Amirkhanov",
+            "email": "artur_d1@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cryptoprocessing\\": "src"
+        }
+    }
+}
