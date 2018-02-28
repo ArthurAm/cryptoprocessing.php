@@ -12,27 +12,34 @@ use GuzzleHttp\Client;
 
 class Request
 {
-    public function __construct()
-    {
-        $this->client = new Client([
+    public static function sendRequest($method, $apiUri, array $parameters = []) {
+        $client = new Client([
             'base_uri' => Config::getApiServerUrl(),
         ]);
-    }
 
-    public function sendRequest($method, $apiUri, array $parameters) {
         $headers = ['Content-Type' => 'application/json'];
 
+        if(Authentication::getToken())
+            $headers['Authorization'] = Authentication::getToken();
+
         if($method === 'GET')
-            $response = $this->client->request($method, $apiUri,[
+            $response = $client->request($method, $apiUri,[
+                'http_errors' => false,
                 'headers' => $headers,
                 'query' => $parameters
             ]);
         elseif ($method === 'POST')
-            $response = $this->client->request($method, $apiUri, [
+            $response = $client->request($method, $apiUri, [
+                'http_errors' => false,
                 'headers' => $headers,
                 'json' => $parameters
             ]);
 
-        return json_decode($response->getBody());
+        $response = json_decode($response->getBody());
+
+        if($response->status == 'fail')
+            throw new \Exception($response->message);
+        else
+            return $response;
     }
 }
