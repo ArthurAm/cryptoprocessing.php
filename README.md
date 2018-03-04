@@ -2,12 +2,12 @@
 
 PHP package to access and interact with [Cryptoprocessing API](https://api.cryptoprocessing.io).
 
-[![Build Status](https://travis-ci.org/oomag/cryptoprocessing.php.svg?branch=master)](https://travis-ci.org/oomag/cryptoprocessing.rb)
-[![Coverage Status](https://coveralls.io/repos/github/oomag/cryptoprocessing.php/badge.svg?branch=master)](https://coveralls.io/github/oomag/cryptoprocessing.rb?branch=master)
+[![Build Status](https://travis-ci.org/oomag/cryptoprocessing.php.svg?branch=master)](https://travis-ci.org/oomag/cryptoprocessing.php)
+[![Coverage Status](https://coveralls.io/repos/github/oomag/cryptoprocessing.php/badge.svg?branch=master)](https://coveralls.io/github/oomag/cryptoprocessing.php?branch=master)
 
 ## Installation
 
-You can install this package via[Composer](http://getcomposer.org).
+You can install this package via [Composer](http://getcomposer.org).
 
 ```bash
 composer require oomag/cryptoprocessing
