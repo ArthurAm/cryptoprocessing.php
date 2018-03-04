@@ -1,5 +1,5 @@
 {
-    "name": "oomag/cryptoprocessing.php",
+    "name": "oomag/cryptoprocessing",
     "description": "Package to access and interact with Cryptoprocessing API",
     "type": "library",
     "license": "MIT",
