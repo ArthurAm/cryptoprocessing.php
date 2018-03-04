@@ -3,7 +3,6 @@
 PHP package to access and interact with [Cryptoprocessing API](https://api.cryptoprocessing.io).
 
 [![Build Status](https://travis-ci.org/oomag/cryptoprocessing.php.svg?branch=master)](https://travis-ci.org/oomag/cryptoprocessing.php)
-[![Coverage Status](https://coveralls.io/repos/github/oomag/cryptoprocessing.php/badge.svg?branch=master)](https://coveralls.io/github/oomag/cryptoprocessing.php?branch=master)
 
 ## Installation
 
