@@ -9,9 +9,8 @@
             "email": "artur_d1@mail.ru"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4.0",
+        "php": "~7",
         "guzzlehttp/guzzle": "~6.0"
     },
     "autoload": {
@@ -20,6 +19,11 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.0"
+        "phpunit/phpunit": "^6"
+    },
+    "config": {
+        "platform": {
+            "php": "7.0"
+        }
     }
 }
