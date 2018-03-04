@@ -3,6 +3,8 @@
     "description": "Package to access and interact with Cryptoprocessing API",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Artur Amirkhanov",
