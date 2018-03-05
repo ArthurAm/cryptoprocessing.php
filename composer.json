@@ -1,7 +1,7 @@
 {
     "name": "oomag/cryptoprocessing",
     "description": "Package to access and interact with Cryptoprocessing API",
-    "type": "library",
+    "type": "package",
     "license": "MIT",
     "version": "1.0.0",
     "minimum-stability":"dev",
